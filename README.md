@@ -1,5 +1,5 @@
 # HTTPFlood
-Tool for flooding HTTP servers under Linux.
+Tool for flooding HTTP servers under [Linux](http://www.linux.org/).
 
 ## License
 Copyright (C) 2013 Christian Mayer (<thefox21at@gmail.com> - <http://fox21.at>)
