@@ -1,8 +1,8 @@
 
 /*
-	Created @ 27.12.2010 by TheFox@fox21.at
+	Created @ 27.12.2010 by Christian Mayer
 	Version: 1.0.0
-	Copyright (c) 2010 TheFox
+	Copyright (c) 2010 Christian Mayer <thefox21at@gmail.com>
 	
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -46,7 +46,7 @@ int main(int argc, const char **argv){
 	size_t sendBufLen = 0;
 	
 	puts("httpflood " VERSION " (" __DATE__ " " __TIME__ ")");
-	puts("Copyright (c) 2010 TheFox@fox21.at\n");
+	puts("Copyright (c) 2010-2014 Christian Mayer <thefox21at@gmail.com>\n");
 	if(argc < ARGC_MIN)
 		usagePrint();
 	
