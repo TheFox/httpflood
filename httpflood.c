@@ -1,7 +1,7 @@
 
 /*
 	Created @ 27.12.2010 by Christian Mayer
-	Version: 1.0.0
+	Version: 1.0.1
 	Copyright (c) 2010 Christian Mayer <thefox21at@gmail.com>
 	
 	This program is free software: you can redistribute it and/or modify
