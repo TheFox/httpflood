@@ -115,7 +115,12 @@ int main(int argc, const char **argv){
 }
 
 void usagePrint(){
-	printf("Usage: ./httpflood DST DPT [CONNECTIONS]\n");
+	printf("Usage: ./httpflood HOST PORT [CONNECTIONS]\n");
+	printf("       HOST is the host or IP of the destionation.\n");
+	printf("       PORT is the port number of the destionation.\n");
+	printf("       CONNECTIONS is the number of how many connections will be used.\n");
+	printf("            Consider to change the ulimit settings for 'open files'\n");
+	printf("            to use more connections.\n");
 	exit(1);
 }
 
