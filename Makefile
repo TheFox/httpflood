@@ -7,7 +7,7 @@ CC = gcc
 CFLAGS = -DVERSION=\"$(VERSION)\"
 
 
-all: clean
+all: httpflood.c
 	$(CC) $(CFLAGS) -o httpflood httpflood.c
 
 clean:
