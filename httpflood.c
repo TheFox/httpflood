@@ -50,7 +50,7 @@ int main(int argc, const char **argv){
 	size_t sendBufLen = 0;
 	
 	puts("httpflood " VERSION " (" __DATE__ " " __TIME__ ")");
-	puts("Copyright (C) 2010-2014 Christian Mayer <http://fox21.at>\n");
+	puts("Copyright (C) 2010 - 2014 Christian Mayer <http://fox21.at>\n");
 	if(argc < ARGC_MIN)
 		usagePrint();
 	
