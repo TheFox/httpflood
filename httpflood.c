@@ -1,8 +1,8 @@
 
 /*
-	Created @ 27.12.2010 by Christian Mayer
-	Version: 1.0.1
-	Copyright (c) 2010 Christian Mayer <thefox21at@gmail.com>
+	Version: 1.0.2
+	Created @ 27.12.2010
+	Copyright (C) 2010 Christian Mayer <http://fox21.at>
 	
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -19,20 +19,24 @@
 */
 
 
+#define VERSION "1.0.3"
+#define ARGC_MIN 3
+#define SEND
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 
-#define ARGC_MIN 3
-#define SEND
-
+#ifdef __APPLE_CC__
+	#include <unistd.h>
+	#include <arpa/inet.h>
+#endif
 
 void usagePrint();
 
 int main(int argc, const char **argv){
-	
 	unsigned int connections = 0;
 	unsigned int connectionsc;
 	const char *dstIpStr = NULL;
@@ -46,7 +50,7 @@ int main(int argc, const char **argv){
 	size_t sendBufLen = 0;
 	
 	puts("httpflood " VERSION " (" __DATE__ " " __TIME__ ")");
-	puts("Copyright (c) 2010-2014 Christian Mayer <thefox21at@gmail.com>\n");
+	puts("Copyright (C) 2010-2014 Christian Mayer <http://fox21.at>\n");
 	if(argc < ARGC_MIN)
 		usagePrint();
 	
