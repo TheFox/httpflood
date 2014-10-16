@@ -127,5 +127,3 @@ void usagePrint(){
 	printf("            to use more connections.\n");
 	exit(0);
 }
-
-// EOF
