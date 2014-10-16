@@ -72,7 +72,7 @@ int main(int argc, const char **argv){
 	memset(sendBuf, 0, msize);
 	
 	// If you don't send a "\n",
-	// the server waits for the end () of the HTTP header.
+	// the server waits for the end of the HTTP header.
 	strcpy(sendBuf, "GET / HTTP/1.0");
 	sendBufLen = strlen(sendBuf);
 #endif
@@ -125,7 +125,7 @@ void usagePrint(){
 	printf("       CONNECTIONS is the number of how many connections will be used.\n");
 	printf("            Consider to change the ulimit settings for 'open files'\n");
 	printf("            to use more connections.\n");
-	exit(1);
+	exit(0);
 }
 
 // EOF

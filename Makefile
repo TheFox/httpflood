@@ -9,5 +9,8 @@ all: httpflood
 httpflood: httpflood.c
 	$(CC) $(CFLAGS) -o httpflood httpflood.c
 
+test: httpflood
+	./httpflood
+
 clean:
 	$(RM) httpflood
