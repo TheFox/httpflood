@@ -1,5 +1,5 @@
 # httpflood Makefile
-# Created @ 27.12.2010 by TheFox@fox21.at
+# Created @ 27.12.2010 by Christian Mayer <http://fox21.at>
 
 RM = rm -rf
 
