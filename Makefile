@@ -7,7 +7,7 @@ RM = rm -rf
 
 .PHONY: all test clean
 
-all: httpflood
+all: httpflood test
 
 httpflood: httpflood.c
 	$(CC) $(CFLAGS) -o httpflood httpflood.c
