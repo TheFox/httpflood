@@ -2,4 +2,6 @@ language: c
 compiler:
     - clang
     - gcc
-script: 'make && make test'
+install:
+    - make
+script: make test
