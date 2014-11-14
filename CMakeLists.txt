@@ -5,7 +5,7 @@ set(HTTPFlood_VERSION_MAJOR 1)
 set(HTTPFlood_VERSION_MINOR 0)
 set(HTTPFlood_VERSION_PATCH 3)
 
-configure_file("${PROJECT_SOURCE_DIR}/src/config.h.in" "${PROJECT_BINARY_DIR}/src/config.h")
+configure_file("${PROJECT_SOURCE_DIR}/src/config.h.in" "${PROJECT_SOURCE_DIR}/src/config.h")
 
 file(GLOB_RECURSE HTTPFlood_SOURCES "src/*.c")
 file(GLOB_RECURSE HTTPFlood_HEADERS "src/*.h")
@@ -20,6 +20,7 @@ list(REMOVE_DUPLICATES HTTPFlood_INCLUDE_DIRS)
 include_directories(${HTTPFlood_INCLUDE_DIRS})
 add_definitions(-Wall)
 add_definitions(-O3)
+
 add_executable(httpflood ${HTTPFlood_SOURCES})
 
 add_executable(httpflood_test tests/httpflood_test.c)
