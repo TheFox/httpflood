@@ -3,6 +3,15 @@ Tool for flooding HTTP servers under [Linux](http://www.linux.org/).
 
 ## Build
 
+1. Clone:
+	
+		git clone https://github.com/TheFox/httpflood.git
+
+2. In `httpflood` directory, Make:
+	
+		cmake . && make && make test
+
+3. Done.
 
 ## Links
 - [Travis CI Repository](https://travis-ci.org/TheFox/httpflood)
