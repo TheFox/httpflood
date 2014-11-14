@@ -9,7 +9,7 @@
 	],
 	"build_systems":[
 		{
-			"name": "Test",
+			"name": "CMake",
 			"cmd": ["cmake . && make"],
 			"shell": true,
 			"path": "$PATH:/usr/local/bin"
