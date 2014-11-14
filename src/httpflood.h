@@ -7,12 +7,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-
-#ifdef __APPLE_CC__
-	#include <unistd.h>
-	#include <arpa/inet.h>
-#endif
+#include <arpa/inet.h>
 
 #endif /* !_HTTPFLOOD_H */
