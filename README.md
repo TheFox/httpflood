@@ -7,7 +7,7 @@ Tool for flooding HTTP servers under [Linux](http://www.linux.org/).
 	
 		git clone https://github.com/TheFox/httpflood.git
 
-2. In `httpflood` directory, Make:
+2. In `httpflood` directory, make:
 	
 		cmake . && make && make test
 
