@@ -19,20 +19,7 @@
 */
 
 
-#define VERSION "1.0.3"
-#define ARGC_MIN 3
-#define SEND
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-
-#ifdef __APPLE_CC__
-	#include <unistd.h>
-	#include <arpa/inet.h>
-#endif
+#include "httpflood.h"
 
 void usagePrint();
 
@@ -49,8 +36,11 @@ int main(int argc, const char **argv){
 	char *sendBuf = NULL;
 	size_t sendBufLen = 0;
 	
-	puts("httpflood " VERSION " (" __DATE__ " " __TIME__ ")");
-	puts("Copyright (C) 2010 - 2014 Christian Mayer <http://fox21.at>\n");
+	printf("%s %d.%d.%d (%s %s)\n", HTTPFlood_NAME,
+		HTTPFlood_VERSION_MAJOR, HTTPFlood_VERSION_MINOR, HTTPFlood_VERSION_PATCH,
+		__DATE__, __TIME__);
+	printf("%s\n", HTTPFlood_COPYRIGHT);
+	
 	if(argc < ARGC_MIN)
 		usagePrint();
 	
@@ -105,7 +95,6 @@ int main(int argc, const char **argv){
 		
 		printf("connect %6d %4d\n", connectionsc, sockWriteBytes);
 		usleep(250);
-		
 	}
 	
 	if(sendBuf)
@@ -125,5 +114,5 @@ void usagePrint(){
 	printf("       CONNECTIONS is the number of how many connections will be used.\n");
 	printf("            Consider to change the ulimit settings for 'open files'\n");
 	printf("            to use more connections.\n");
-	exit(0);
+	exit(1);
 }

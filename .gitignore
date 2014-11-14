@@ -1,1 +1,6 @@
 httpflood
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+src/config.h

@@ -3,5 +3,6 @@ compiler:
     - clang
     - gcc
 install:
+    - cmake .
     - make
-script: make test
+script: ./httpflood || true
