@@ -1,6 +1,9 @@
 httpflood
+httpflood_test
 CMakeFiles
 CMakeCache.txt
+CTestTestfile.cmake
 cmake_install.cmake
+Testing
 Makefile
 src/config.h

@@ -4,5 +4,5 @@ compiler:
     - gcc
 install:
     - cmake .
-    - make
-script: ./httpflood || true
+    - make VERBOSE=1
+script: make test

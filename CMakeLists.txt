@@ -18,8 +18,20 @@ endforeach()
 list(REMOVE_DUPLICATES HTTPFlood_INCLUDE_DIRS)
 
 include_directories(${HTTPFlood_INCLUDE_DIRS})
-add_executable(httpflood ${HTTPFlood_SOURCES})
 add_definitions(-Wall)
+add_definitions(-O3)
+add_executable(httpflood ${HTTPFlood_SOURCES})
+
+add_executable(httpflood_test tests/httpflood_test.c)
+
+
+
+enable_testing()
+
+add_test(NAME StdRuns COMMAND httpflood)
+set_tests_properties(StdRuns PROPERTIES WILL_FAIL true)
+
+add_test(NAME TestRuns COMMAND httpflood_test)
 
 
 MESSAGE("")
