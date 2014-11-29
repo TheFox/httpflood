@@ -103,8 +103,8 @@ int main(int argc, const char **argv){
 	puts("sleep");
 	sleep(10);
 	
-	puts("exit 0");
-	return 0;
+	puts("exit");
+	return EXIT_SUCCESS;
 }
 
 void usagePrint(){

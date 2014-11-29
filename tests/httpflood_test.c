@@ -27,5 +27,5 @@ int main(int argc, const char **argv){
 	printf("SEND: ok\n");
 #endif
 	
-	return 0;
+	return EXIT_SUCCESS;
 }
