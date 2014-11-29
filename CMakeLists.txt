@@ -5,6 +5,8 @@ set(HTTPFlood_VERSION_MAJOR 1)
 set(HTTPFlood_VERSION_MINOR 0)
 set(HTTPFlood_VERSION_PATCH 3)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
+
 configure_file("${PROJECT_SOURCE_DIR}/src/config.h.in" "${PROJECT_SOURCE_DIR}/src/config.h")
 
 file(GLOB_RECURSE HTTPFlood_SOURCES "src/*.c")
