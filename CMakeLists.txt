@@ -7,6 +7,7 @@ set(PROJECT_VERSION_PATCH 3)
 set(PROJECT_DEFINE_ARGC_MIN 3)
 set(SEND 1)
 
+set(CMAKE_C_FLAGS "-Wall -O3")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
 if(SEND)
@@ -25,8 +26,6 @@ endforeach()
 list(REMOVE_DUPLICATES PROJECT_INCLUDE_DIRS)
 
 include_directories(${PROJECT_INCLUDE_DIRS})
-add_definitions(-Wall)
-add_definitions(-O3)
 
 add_executable(httpflood ${PROJECT_SOURCES})
 
