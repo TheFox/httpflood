@@ -12,4 +12,6 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-#endif /* !_HTTPFLOOD_H */
+void usagePrint();
+
+#endif /* _HTTPFLOOD_H */

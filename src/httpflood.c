@@ -21,8 +21,6 @@
 
 #include "httpflood.h"
 
-void usagePrint();
-
 int main(int argc, const char **argv){
 	unsigned int connections = 0;
 	unsigned int connectionsc;
