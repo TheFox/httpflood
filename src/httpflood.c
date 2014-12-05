@@ -36,10 +36,11 @@ int main(int argc, const char **argv){
 	char *sendBuf = NULL;
 	size_t sendBufLen = 0;
 	
-	printf("%s %d.%d.%d (%s %s)\n", HTTPFlood_NAME,
-		HTTPFlood_VERSION_MAJOR, HTTPFlood_VERSION_MINOR, HTTPFlood_VERSION_PATCH,
+	printf("%s %d.%d.%d (%s %s)\n", PROJECT_NAME,
+		PROJECT_VERSION_MAJOR, PROJECT_VERSION_MINOR, PROJECT_VERSION_PATCH,
 		__DATE__, __TIME__);
-	printf("%s\n", HTTPFlood_COPYRIGHT);
+	printf("%s\n", PROJECT_COPYRIGHT);
+	printf("\n");
 	
 	if(argc < ARGC_MIN)
 		usagePrint();
