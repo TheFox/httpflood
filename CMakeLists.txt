@@ -8,7 +8,9 @@ set(PROJECT_COPYRIGHT "Copyright (C) 2010 Christian Mayer <http://fox21.at>")
 set(PROJECT_DEFINE_ARGC_MIN 3)
 set(SEND 1)
 
-set(CMAKE_C_FLAGS "-Wall -O3")
+set(CMAKE_C_FLAGS "-Wall")
+set(CMAKE_C_FLAGS_DEBUG "-g -O0 -DDEBUG")
+set(CMAKE_C_FLAGS_RELEASE "-O3")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
 if(SEND)

@@ -9,7 +9,7 @@ Tool for flooding HTTP servers under [Linux](http://www.linux.org/).
 
 2. In `httpflood` directory, make:
 	
-		cmake . && make && make test
+		mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && make && make test
 
 3. Done.
 
