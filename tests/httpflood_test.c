@@ -1,5 +1,5 @@
 
-#include "../src/httpflood.h"
+#include "httpflood.h"
 
 int main(int argc, const char **argv){
 	printf("%s %d.%d.%d (%s %s)\n", PROJECT_NAME,
