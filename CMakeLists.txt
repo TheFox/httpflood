@@ -4,6 +4,7 @@ project(HTTPFlood)
 set(PROJECT_VERSION_MAJOR 1)
 set(PROJECT_VERSION_MINOR 0)
 set(PROJECT_VERSION_PATCH 3)
+set(PROJECT_COPYRIGHT "Copyright (C) 2010 Christian Mayer <http://fox21.at>")
 set(PROJECT_DEFINE_ARGC_MIN 3)
 set(SEND 1)
 
