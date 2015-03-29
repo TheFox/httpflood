@@ -16,7 +16,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 if(SEND)
 	set(PROJECT_DEFINE_SEND "#define SEND")
 endif()
-configure_file("${PROJECT_SOURCE_DIR}/src/config.h.in" "${PROJECT_SOURCE_DIR}/src/config.h")
+configure_file("${PROJECT_SOURCE_DIR}/src/config.h.in" "${PROJECT_BINARY_DIR}/src/config.h")
 
 file(GLOB_RECURSE PROJECT_SOURCES "src/*.c")
 file(GLOB_RECURSE PROJECT_HEADERS "src/*.h")
@@ -29,6 +29,7 @@ endforeach()
 list(REMOVE_DUPLICATES PROJECT_INCLUDE_DIRS)
 
 include_directories(${PROJECT_INCLUDE_DIRS})
+include_directories("${PROJECT_BINARY_DIR}/src")
 
 add_executable(httpflood ${PROJECT_SOURCES})
 
