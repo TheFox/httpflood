@@ -8,6 +8,18 @@ int main(int argc, const char **argv){
 	printf("%s\n", PROJECT_COPYRIGHT);
 	puts("");
 	
+#ifdef DEBUG
+	puts("is DEBUG");
+#else
+	puts("NOT DEBUG");
+#endif
+#ifdef SEND
+	puts("is SEND");
+#else
+	puts("not SEND");
+#endif
+	puts("");
+	
 	printf("getuid: %p\n", getuid);
 	printf("user: %d\n", getuid());
 	printf("atoi(): %p\n", atoi);
@@ -22,10 +34,6 @@ int main(int argc, const char **argv){
 	printf("inet_addr(): %p\n", inet_addr);
 	printf("connect(): %p\n", connect);
 	printf("send(): %p\n", send);
-	
-#ifdef SEND
-	printf("SEND: ok\n");
-#endif
 	
 	return EXIT_SUCCESS;
 }
