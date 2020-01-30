@@ -13,9 +13,6 @@ Tool for flooding HTTP servers under [Linux](http://www.linux.org/).
 
 3. Done.
 
-## Links
-- [Travis CI Repository](https://travis-ci.org/TheFox/httpflood)
-
 ## License
 Copyright (C) 2010 Christian Mayer <http://fox21.at>
 
