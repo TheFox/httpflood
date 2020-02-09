@@ -1,6 +1,6 @@
 
 /*
-	Version: 1.0.2
+	Version: 1.1.0
 	Created @ 27.12.2010
 	Copyright (C) 2010 Christian Mayer <http://fox21.at>
 */
